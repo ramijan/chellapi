@@ -1,0 +1,17 @@
+<h1>Coachella Stages</h1>
+
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Name</th>
+  </thead>
+  <tbody>
+    <% @stages.each do |stage| %>
+      <tr>
+        <td><%= stage.id %></td>
+        <td><%= stage.name %></td>
+        <td><%= stage.artists_count %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
